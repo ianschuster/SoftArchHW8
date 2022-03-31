@@ -1,0 +1,55 @@
+\hypertarget{_journaling_internal_8h}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Journaling/\+Journaling\+Internal.h File Reference}
+\label{_journaling_internal_8h}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/JournalingInternal.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/JournalingInternal.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_journal}{Journal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_journal_1_1_journal_file}{Journal\+::\+Journal\+File}} $\ast$ \mbox{\hyperlink{_journaling_internal_8h_acc26f9e97948716209246172d76fdc16}{Get\+Active\+Journal\+File}} ()
+\item 
+bool \mbox{\hyperlink{_journaling_internal_8h_ad76106857bb1c87c7e6cf3045182d265}{In\+Guid\+To\+Param\+Map}} (int guid)
+\item 
+void \mbox{\hyperlink{_journaling_internal_8h_a2b0a942da7b65b3ac7405fa487aa0e7f}{Add\+Guid\+To\+Param\+Map}} (int guid, std\+::string \&param)
+\item 
+std\+::string \mbox{\hyperlink{_journaling_internal_8h_a0a6c7126b8a7e0485b3687cf07ecc01f}{Get\+Guid\+To\+Param}} (int guid, bool \&found)
+\item 
+std\+::string \mbox{\hyperlink{_journaling_internal_8h_a99b9575d846befb2cb6163a52d9c2b70}{Generate\+Variable\+Name}} (std\+::string variable\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_journaling_internal_8h_a2b0a942da7b65b3ac7405fa487aa0e7f}\label{_journaling_internal_8h_a2b0a942da7b65b3ac7405fa487aa0e7f}} 
+\index{JournalingInternal.h@{JournalingInternal.h}!AddGuidToParamMap@{AddGuidToParamMap}}
+\index{AddGuidToParamMap@{AddGuidToParamMap}!JournalingInternal.h@{JournalingInternal.h}}
+\doxysubsubsection{\texorpdfstring{AddGuidToParamMap()}{AddGuidToParamMap()}}
+{\footnotesize\ttfamily void Add\+Guid\+To\+Param\+Map (\begin{DoxyParamCaption}\item[{int}]{guid,  }\item[{std\+::string \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_internal_8h_a99b9575d846befb2cb6163a52d9c2b70}\label{_journaling_internal_8h_a99b9575d846befb2cb6163a52d9c2b70}} 
+\index{JournalingInternal.h@{JournalingInternal.h}!GenerateVariableName@{GenerateVariableName}}
+\index{GenerateVariableName@{GenerateVariableName}!JournalingInternal.h@{JournalingInternal.h}}
+\doxysubsubsection{\texorpdfstring{GenerateVariableName()}{GenerateVariableName()}}
+{\footnotesize\ttfamily std\+::string Generate\+Variable\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{variable\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_internal_8h_acc26f9e97948716209246172d76fdc16}\label{_journaling_internal_8h_acc26f9e97948716209246172d76fdc16}} 
+\index{JournalingInternal.h@{JournalingInternal.h}!GetActiveJournalFile@{GetActiveJournalFile}}
+\index{GetActiveJournalFile@{GetActiveJournalFile}!JournalingInternal.h@{JournalingInternal.h}}
+\doxysubsubsection{\texorpdfstring{GetActiveJournalFile()}{GetActiveJournalFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_journal_1_1_journal_file}{Journal\+::\+Journal\+File}} $\ast$ Get\+Active\+Journal\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_internal_8h_a0a6c7126b8a7e0485b3687cf07ecc01f}\label{_journaling_internal_8h_a0a6c7126b8a7e0485b3687cf07ecc01f}} 
+\index{JournalingInternal.h@{JournalingInternal.h}!GetGuidToParam@{GetGuidToParam}}
+\index{GetGuidToParam@{GetGuidToParam}!JournalingInternal.h@{JournalingInternal.h}}
+\doxysubsubsection{\texorpdfstring{GetGuidToParam()}{GetGuidToParam()}}
+{\footnotesize\ttfamily std\+::string Get\+Guid\+To\+Param (\begin{DoxyParamCaption}\item[{int}]{guid,  }\item[{bool \&}]{found }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_internal_8h_ad76106857bb1c87c7e6cf3045182d265}\label{_journaling_internal_8h_ad76106857bb1c87c7e6cf3045182d265}} 
+\index{JournalingInternal.h@{JournalingInternal.h}!InGuidToParamMap@{InGuidToParamMap}}
+\index{InGuidToParamMap@{InGuidToParamMap}!JournalingInternal.h@{JournalingInternal.h}}
+\doxysubsubsection{\texorpdfstring{InGuidToParamMap()}{InGuidToParamMap()}}
+{\footnotesize\ttfamily bool In\+Guid\+To\+Param\+Map (\begin{DoxyParamCaption}\item[{int}]{guid }\end{DoxyParamCaption})}
+

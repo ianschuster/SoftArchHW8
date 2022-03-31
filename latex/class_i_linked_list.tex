@@ -1,0 +1,77 @@
+\hypertarget{class_i_linked_list}{}\doxysection{ILinked\+List Class Reference}
+\label{class_i_linked_list}\index{ILinkedList@{ILinkedList}}
+Inheritance diagram for ILinked\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_linked_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_i_linked_list_a8247ac82ac5fcef19f03726629bb1f8e}{is\+Empty}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{class_i_linked_list_a3e3716659ed7a10596142448c30a5478}{add}} (int val)=0
+\item 
+virtual bool \mbox{\hyperlink{class_i_linked_list_af499a78a8585a492a722c2b1c8de5ed8}{remove}} (int val)=0
+\item 
+virtual void \mbox{\hyperlink{class_i_linked_list_ad23b827d3a1a43aed1034bed9a67dfb7}{clear}} ()=0
+\item 
+\mbox{\Hypertarget{class_i_linked_list_ae261a704a9db220ce9a897fd23b87b6f}\label{class_i_linked_list_ae261a704a9db220ce9a897fd23b87b6f}} 
+virtual std\+::string {\bfseries to\+String} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_linked_list_aec93fb66ec818f5816d0a973f1b050ed}\label{class_i_linked_list_aec93fb66ec818f5816d0a973f1b050ed}} 
+int {\bfseries m\+\_\+count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_linked_list_a3e3716659ed7a10596142448c30a5478}\label{class_i_linked_list_a3e3716659ed7a10596142448c30a5478}} 
+\index{ILinkedList@{ILinkedList}!add@{add}}
+\index{add@{add}!ILinkedList@{ILinkedList}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual bool ILinked\+List\+::add (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Adds a value to the Linked\+List. Return true if able to, otherwise false 
+
+Implemented in \mbox{\hyperlink{class_array_based_linked_list_a6324c117c99bcb0fd9b53818dfc974d0}{Array\+Based\+Linked\+List}}, and \mbox{\hyperlink{class_pointer_based_linked_list_a294fe7bd90396d4517d11085298b0bef}{Pointer\+Based\+Linked\+List}}.
+
+\mbox{\Hypertarget{class_i_linked_list_ad23b827d3a1a43aed1034bed9a67dfb7}\label{class_i_linked_list_ad23b827d3a1a43aed1034bed9a67dfb7}} 
+\index{ILinkedList@{ILinkedList}!clear@{clear}}
+\index{clear@{clear}!ILinkedList@{ILinkedList}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual void ILinked\+List\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove all elements from Linked\+List 
+
+Implemented in \mbox{\hyperlink{class_array_based_linked_list_a4a440e37bc1c705ab19a5c697c1d9fe2}{Array\+Based\+Linked\+List}}, and \mbox{\hyperlink{class_pointer_based_linked_list_abc16ac4b588693b4ca0b87754c44cfd3}{Pointer\+Based\+Linked\+List}}.
+
+\mbox{\Hypertarget{class_i_linked_list_a8247ac82ac5fcef19f03726629bb1f8e}\label{class_i_linked_list_a8247ac82ac5fcef19f03726629bb1f8e}} 
+\index{ILinkedList@{ILinkedList}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!ILinkedList@{ILinkedList}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily virtual bool ILinked\+List\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns true if list is empty, otherwise true 
+
+Implemented in \mbox{\hyperlink{class_array_based_linked_list_a9724eaf8275e7b8b3de8c6d71c3d2956}{Array\+Based\+Linked\+List}}, and \mbox{\hyperlink{class_pointer_based_linked_list_a015867037231797847b0c7434ba37d8b}{Pointer\+Based\+Linked\+List}}.
+
+\mbox{\Hypertarget{class_i_linked_list_af499a78a8585a492a722c2b1c8de5ed8}\label{class_i_linked_list_af499a78a8585a492a722c2b1c8de5ed8}} 
+\index{ILinkedList@{ILinkedList}!remove@{remove}}
+\index{remove@{remove}!ILinkedList@{ILinkedList}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily virtual bool ILinked\+List\+::remove (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Remove a value to the Linked\+List. Return true if able to, otherwise false. Will only remove one entry if there are multiple entries with the same value 
+
+Implemented in \mbox{\hyperlink{class_array_based_linked_list_ab1a8bf43e7456786bd0098f2a925228b}{Array\+Based\+Linked\+List}}, and \mbox{\hyperlink{class_pointer_based_linked_list_ac60bd4a11ede13bbdcb96262e476d899}{Pointer\+Based\+Linked\+List}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Core/Linked\+List.\+h\item 
+C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Core/Linked\+List.\+cpp\end{DoxyCompactItemize}

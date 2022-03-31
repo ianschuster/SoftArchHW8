@@ -1,0 +1,60 @@
+\hypertarget{_app_library_2_extrude_8h_source}{}\doxysection{Extrude.\+h}
+\label{_app_library_2_extrude_8h_source}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppLibrary/Extrude.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppLibrary/Extrude.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}AppLibrary.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Feature.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keywordtype}{void} ReadInExtrude(std::ifstream\& streamObject);}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }APPLIBRARY\_API \mbox{\hyperlink{class_i_extrude}{IExtrude}} }
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} std::string GetVersion() = 0;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }APPLIBRARY\_API \mbox{\hyperlink{class_extrude}{Extrude}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_feature}{Feature}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_i_extrude}{IExtrude}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_extrude}{Extrude}}(std::string distance, std::string targetFace, std::string vectorObject, std::string isAddition, std::string isSubtraction);}
+\DoxyCodeLine{21     std::string GetVersion() \textcolor{keyword}{override};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{const} std::string\& GetDistance()}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} m\_distance;}
+\DoxyCodeLine{26     \};}
+\DoxyCodeLine{27     \textcolor{keyword}{const} std::string \& GetTargetFace()}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29         \textcolor{keywordflow}{return} m\_targetFace;}
+\DoxyCodeLine{30     \};}
+\DoxyCodeLine{31     \textcolor{keyword}{const} std::string \& GetVectorObject()}
+\DoxyCodeLine{32     \{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} m\_vectorObject;}
+\DoxyCodeLine{34     \};}
+\DoxyCodeLine{35     \textcolor{keyword}{const} std::string \& GetIsAddition()}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} m\_isAddition;}
+\DoxyCodeLine{38     \};}
+\DoxyCodeLine{39     \textcolor{keyword}{const} std::string \& GetIsSubtraction()}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} m\_isSubtraction;}
+\DoxyCodeLine{42     \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{private}:}
+\DoxyCodeLine{45     std::string m\_distance;}
+\DoxyCodeLine{46     std::string m\_targetFace;}
+\DoxyCodeLine{47     std::string m\_vectorObject;}
+\DoxyCodeLine{48     std::string m\_isAddition;}
+\DoxyCodeLine{49     std::string m\_isSubtraction;}
+\DoxyCodeLine{50 \};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 }
+
+\end{DoxyCode}

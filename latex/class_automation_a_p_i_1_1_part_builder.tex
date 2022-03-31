@@ -1,0 +1,98 @@
+\hypertarget{class_automation_a_p_i_1_1_part_builder}{}\doxysection{Automation\+API\+::Part\+Builder Class Reference}
+\label{class_automation_a_p_i_1_1_part_builder}\index{AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}}
+
+
+\mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder}{Part\+Builder}} is used by the Automation API to create spherical parts.  
+
+
+
+
+{\ttfamily \#include $<$Part\+Builder.\+h$>$}
+
+Inheritance diagram for Automation\+API\+::Part\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_automation_a_p_i_1_1_part_builder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}{Part\+Builder\+Types}} \{ {\bfseries Types\+Radius}
+, \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915a90831693d94bf4faea7c81606a09ac99}{Types\+Circumference}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a7963da041f9b3882d12311c252c80c96}\label{class_automation_a_p_i_1_1_part_builder_a7963da041f9b3882d12311c252c80c96}} 
+void {\bfseries Set\+Type} (\mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}{Part\+Builder\+Types}} type)
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a696aae1334ab1710012179fd63cd1b66}\label{class_automation_a_p_i_1_1_part_builder_a696aae1334ab1710012179fd63cd1b66}} 
+\mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}{Part\+Builder\+Types}} {\bfseries Get\+Type} ()
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_ac65700ed5ce9e201258f3930380ac3a0}\label{class_automation_a_p_i_1_1_part_builder_ac65700ed5ce9e201258f3930380ac3a0}} 
+void {\bfseries Set\+Radius} (int h)
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a496bd8be754fbec82e79d04c5b44d34f}\label{class_automation_a_p_i_1_1_part_builder_a496bd8be754fbec82e79d04c5b44d34f}} 
+int {\bfseries Get\+Radius} ()
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a6b23e99753f07848e1b7540a9d62d521}\label{class_automation_a_p_i_1_1_part_builder_a6b23e99753f07848e1b7540a9d62d521}} 
+void {\bfseries Set\+Circumference} (int w)
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_adbf6252bed52c982c3c76a07ed3fd40e}\label{class_automation_a_p_i_1_1_part_builder_adbf6252bed52c982c3c76a07ed3fd40e}} 
+int {\bfseries Get\+Circumference} ()
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_afdcc273e8e97c5bf4035f3975dfd281e}\label{class_automation_a_p_i_1_1_part_builder_afdcc273e8e97c5bf4035f3975dfd281e}} 
+int {\bfseries Get\+Surface\+Area} ()
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a8ac9bb9ba4db049e167b45cdea9d816c}\label{class_automation_a_p_i_1_1_part_builder_a8ac9bb9ba4db049e167b45cdea9d816c}} 
+int {\bfseries Get\+Volume} ()
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a866e4d7a39af651b739135e985df0a9a}\label{class_automation_a_p_i_1_1_part_builder_a866e4d7a39af651b739135e985df0a9a}} 
+void {\bfseries Set\+Origin} (int x, int y, int z)
+\item 
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a0eb4a7b15f4164a7487811dc17848017}\label{class_automation_a_p_i_1_1_part_builder_a0eb4a7b15f4164a7487811dc17848017}} 
+void {\bfseries Get\+Origin} (int \&x, int \&y, int \&z)
+\item 
+\mbox{\hyperlink{class_automation_a_p_i_1_1_c_a_d_object}{CADObject}} $\ast$ \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_a8c9445f92c8d3b8d03d265c0cf3aa55d}{Commit}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder}{Part\+Builder}} is used by the Automation API to create spherical parts. 
+
+This part builder creates spherical parts either by using a given radius, or by using a given circumference. Once the part is created you can change the part using Set\+Radius, Set\+Origin, or Set\+Circumference. To get info about the part you can use Get\+Radius, Get\+Origin, Get\+Circumference, Get\+Surface\+Area, or Get\+Volume. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}\label{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}} 
+\index{AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}!PartBuilderTypes@{PartBuilderTypes}}
+\index{PartBuilderTypes@{PartBuilderTypes}!AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}}
+\doxysubsubsection{\texorpdfstring{PartBuilderTypes}{PartBuilderTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}{Automation\+API\+::\+Part\+Builder\+::\+Part\+Builder\+Types}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TypesCircumference@{TypesCircumference}!AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}}\index{AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}!TypesCircumference@{TypesCircumference}}}\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915a90831693d94bf4faea7c81606a09ac99}\label{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915a90831693d94bf4faea7c81606a09ac99}} 
+Types\+Circumference&Represents the part created by providing radius. Represents the part created by providing circumference. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_automation_a_p_i_1_1_part_builder_a8c9445f92c8d3b8d03d265c0cf3aa55d}\label{class_automation_a_p_i_1_1_part_builder_a8c9445f92c8d3b8d03d265c0cf3aa55d}} 
+\index{AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}!Commit@{Commit}}
+\index{Commit@{Commit}!AutomationAPI::PartBuilder@{AutomationAPI::PartBuilder}}
+\doxysubsubsection{\texorpdfstring{Commit()}{Commit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_automation_a_p_i_1_1_c_a_d_object}{Automation\+API\+::\+CADObject}} $\ast$ Automation\+API\+::\+Part\+Builder\+::\+Commit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Commit the builder 
+
+Implements \mbox{\hyperlink{class_automation_a_p_i_1_1_i_builder}{Automation\+API\+::\+IBuilder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Automation\+Binding/Part\+Builder.\+h\item 
+C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Automation\+Binding/Part\+Builder.\+cpp\end{DoxyCompactItemize}

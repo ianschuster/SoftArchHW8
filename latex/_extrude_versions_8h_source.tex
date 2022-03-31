@@ -1,0 +1,43 @@
+\hypertarget{_extrude_versions_8h_source}{}\doxysection{Extrude\+Versions.\+h}
+\label{_extrude_versions_8h_source}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppLibrary/ExtrudeVersions.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppLibrary/ExtrudeVersions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Extrude.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{class }\mbox{\hyperlink{class_extrude2}{Extrude2}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_feature}{Feature}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_i_extrude}{IExtrude}}}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8 \textcolor{keyword}{public}:}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_extrude2}{Extrude2}}(std::string distance, std::string targetFace, std::string vectorObject, std::string booleanType);}
+\DoxyCodeLine{10     std::string GetVersion() \textcolor{keyword}{override};}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     \textcolor{keyword}{const} std::string\& GetDistance()}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14         \textcolor{keywordflow}{return} m\_distance;}
+\DoxyCodeLine{15     \};}
+\DoxyCodeLine{16     \textcolor{keyword}{const} std::string\& GetTargetFace()}
+\DoxyCodeLine{17     \{}
+\DoxyCodeLine{18         \textcolor{keywordflow}{return} m\_targetFace;}
+\DoxyCodeLine{19     \};}
+\DoxyCodeLine{20     \textcolor{keyword}{const} std::string\& GetVectorObject()}
+\DoxyCodeLine{21     \{}
+\DoxyCodeLine{22         \textcolor{keywordflow}{return} m\_vectorObject;}
+\DoxyCodeLine{23     \};}
+\DoxyCodeLine{24     \textcolor{keyword}{const} std::string\& GetBooleanType()}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} m\_booleanType;}
+\DoxyCodeLine{27     \};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     std::string m\_distance;}
+\DoxyCodeLine{32     std::string m\_targetFace;}
+\DoxyCodeLine{33     std::string m\_vectorObject;}
+\DoxyCodeLine{34     std::string m\_booleanType;}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \};}
+\DoxyCodeLine{37 }
+
+\end{DoxyCode}

@@ -1,0 +1,48 @@
+\hypertarget{_part_ops_8h}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+App\+Part\+Ops/\+Part\+Ops.h File Reference}
+\label{_part_ops_8h}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppPartOps/PartOps.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppPartOps/PartOps.h}}
+{\ttfamily \#include \char`\"{}App\+Part\+Ops\+Exports.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+Guid\+Object.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_part_file}{Part\+File}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ \mbox{\hyperlink{_part_ops_8h_a23f9865b29af8e7ab06fdecb4b9b8966}{Journaling\+\_\+\+Make\+Part}} (std\+::string)
+\item 
+\mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ \mbox{\hyperlink{_part_ops_8h_a63e3db77a19d05cfc4ad8b2fb6a7fd87}{Journaling\+\_\+\+Open\+Part}} (std\+::string)
+\item 
+\mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} void \mbox{\hyperlink{_part_ops_8h_a0315e36e8c377c1c3db982a2b9856468}{Journaling\+\_\+\+Part\+\_\+\+Save}} (\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$part\+File)
+\item 
+\mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} void \mbox{\hyperlink{_part_ops_8h_a75b376512189585271b8db01b2a3e247}{Journaling\+\_\+\+Part\+\_\+\+Make\+Widget\+Feature}} (\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$part\+File, bool option1, int values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_part_ops_8h_a23f9865b29af8e7ab06fdecb4b9b8966}\label{_part_ops_8h_a23f9865b29af8e7ab06fdecb4b9b8966}} 
+\index{PartOps.h@{PartOps.h}!Journaling\_MakePart@{Journaling\_MakePart}}
+\index{Journaling\_MakePart@{Journaling\_MakePart}!PartOps.h@{PartOps.h}}
+\doxysubsubsection{\texorpdfstring{Journaling\_MakePart()}{Journaling\_MakePart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ Journaling\+\_\+\+Make\+Part (\begin{DoxyParamCaption}\item[{std\+::string}]{part\+File\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8h_a63e3db77a19d05cfc4ad8b2fb6a7fd87}\label{_part_ops_8h_a63e3db77a19d05cfc4ad8b2fb6a7fd87}} 
+\index{PartOps.h@{PartOps.h}!Journaling\_OpenPart@{Journaling\_OpenPart}}
+\index{Journaling\_OpenPart@{Journaling\_OpenPart}!PartOps.h@{PartOps.h}}
+\doxysubsubsection{\texorpdfstring{Journaling\_OpenPart()}{Journaling\_OpenPart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ Journaling\+\_\+\+Open\+Part (\begin{DoxyParamCaption}\item[{std\+::string}]{part\+File\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8h_a75b376512189585271b8db01b2a3e247}\label{_part_ops_8h_a75b376512189585271b8db01b2a3e247}} 
+\index{PartOps.h@{PartOps.h}!Journaling\_Part\_MakeWidgetFeature@{Journaling\_Part\_MakeWidgetFeature}}
+\index{Journaling\_Part\_MakeWidgetFeature@{Journaling\_Part\_MakeWidgetFeature}!PartOps.h@{PartOps.h}}
+\doxysubsubsection{\texorpdfstring{Journaling\_Part\_MakeWidgetFeature()}{Journaling\_Part\_MakeWidgetFeature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} void Journaling\+\_\+\+Part\+\_\+\+Make\+Widget\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$}]{part\+File,  }\item[{bool}]{option1,  }\item[{int}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8h_a0315e36e8c377c1c3db982a2b9856468}\label{_part_ops_8h_a0315e36e8c377c1c3db982a2b9856468}} 
+\index{PartOps.h@{PartOps.h}!Journaling\_Part\_Save@{Journaling\_Part\_Save}}
+\index{Journaling\_Part\_Save@{Journaling\_Part\_Save}!PartOps.h@{PartOps.h}}
+\doxysubsubsection{\texorpdfstring{Journaling\_Part\_Save()}{Journaling\_Part\_Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_app_part_ops_exports_8h_a3c3ab1a67a9072465f2bca0fcf1946a3}{APPPARTOPS\+\_\+\+API}} void Journaling\+\_\+\+Part\+\_\+\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$}]{part\+File }\end{DoxyParamCaption})}
+

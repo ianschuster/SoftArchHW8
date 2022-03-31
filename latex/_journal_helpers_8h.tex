@@ -1,0 +1,139 @@
+\hypertarget{_journal_helpers_8h}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Journaling/\+Journal\+Helpers.h File Reference}
+\label{_journal_helpers_8h}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/JournalHelpers.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/JournalHelpers.h}}
+{\ttfamily \#include \char`\"{}Journal\+Exports.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Journaling\+Types.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_a934246b67e835337052e13bbf45713b4}{Journal\+Start\+Call}} (std\+::string method\+Name, \mbox{\hyperlink{_journaling_types_8h_a9d427615dc05ca96030f6c38d8a5420b}{Canned\+Globals}} canned\+Global)
+\begin{DoxyCompactList}\small\item\em Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a canned global \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_acabf619db2168618c066587c8c78faa3}{Journal\+Start\+Call}} (std\+::string method\+Name, \mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$class\+Object)
+\begin{DoxyCompactList}\small\item\em Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a class \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_a208ecd0a5bf985e92dfd56f34cec8fa1}{Journal\+End\+Call}} ()
+\begin{DoxyCompactList}\small\item\em Ends the journal for the method call \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_a3a52d3fc28474bf6d19d13b70c61282e}{Journal\+Int\+In\+Param}} (int value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a integer parameter \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_abea5453a7aafb0f3be897871357a2405}{Journal\+Bool\+In\+Param}} (bool value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a bool parameter \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_a3aa0831d89133037fc096e48569b7e40}{Journal\+String\+In\+Param}} (std\+::string value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a string parameter \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journal_helpers_8h_aa6c5f9dc1651e2d1288b66ef75428239}{Journal\+Return\+Class}} (\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$class\+Object, std\+::string class\+Name, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a class as a return parameter \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_journal_helpers_8h_abea5453a7aafb0f3be897871357a2405}\label{_journal_helpers_8h_abea5453a7aafb0f3be897871357a2405}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalBoolInParam@{JournalBoolInParam}}
+\index{JournalBoolInParam@{JournalBoolInParam}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalBoolInParam()}{JournalBoolInParam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+Bool\+In\+Param (\begin{DoxyParamCaption}\item[{bool}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a bool parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journal_helpers_8h_a208ecd0a5bf985e92dfd56f34cec8fa1}\label{_journal_helpers_8h_a208ecd0a5bf985e92dfd56f34cec8fa1}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalEndCall@{JournalEndCall}}
+\index{JournalEndCall@{JournalEndCall}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalEndCall()}{JournalEndCall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+End\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the journal for the method call 
+
+\mbox{\Hypertarget{_journal_helpers_8h_a3a52d3fc28474bf6d19d13b70c61282e}\label{_journal_helpers_8h_a3a52d3fc28474bf6d19d13b70c61282e}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalIntInParam@{JournalIntInParam}}
+\index{JournalIntInParam@{JournalIntInParam}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalIntInParam()}{JournalIntInParam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+Int\+In\+Param (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a integer parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journal_helpers_8h_aa6c5f9dc1651e2d1288b66ef75428239}\label{_journal_helpers_8h_aa6c5f9dc1651e2d1288b66ef75428239}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalReturnClass@{JournalReturnClass}}
+\index{JournalReturnClass@{JournalReturnClass}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalReturnClass()}{JournalReturnClass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+Return\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$}]{class\+Object,  }\item[{std\+::string}]{class\+Name,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a class as a return parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Object} & \\
+\hline
+{\em class\+Name} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journal_helpers_8h_a934246b67e835337052e13bbf45713b4}\label{_journal_helpers_8h_a934246b67e835337052e13bbf45713b4}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalStartCall@{JournalStartCall}}
+\index{JournalStartCall@{JournalStartCall}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalStartCall()}{JournalStartCall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+Start\+Call (\begin{DoxyParamCaption}\item[{std\+::string}]{method\+Name,  }\item[{\mbox{\hyperlink{_journaling_types_8h_a9d427615dc05ca96030f6c38d8a5420b}{Canned\+Globals}}}]{canned\+Global }\end{DoxyParamCaption})}
+
+
+
+Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a canned global 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+{\em canned\+Global} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journal_helpers_8h_acabf619db2168618c066587c8c78faa3}\label{_journal_helpers_8h_acabf619db2168618c066587c8c78faa3}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalStartCall@{JournalStartCall}}
+\index{JournalStartCall@{JournalStartCall}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalStartCall()}{JournalStartCall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+Start\+Call (\begin{DoxyParamCaption}\item[{std\+::string}]{method\+Name,  }\item[{\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$}]{class\+Object }\end{DoxyParamCaption})}
+
+
+
+Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+{\em class\+Object} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journal_helpers_8h_a3aa0831d89133037fc096e48569b7e40}\label{_journal_helpers_8h_a3aa0831d89133037fc096e48569b7e40}} 
+\index{JournalHelpers.h@{JournalHelpers.h}!JournalStringInParam@{JournalStringInParam}}
+\index{JournalStringInParam@{JournalStringInParam}!JournalHelpers.h@{JournalHelpers.h}}
+\doxysubsubsection{\texorpdfstring{JournalStringInParam()}{JournalStringInParam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Journal\+String\+In\+Param (\begin{DoxyParamCaption}\item[{std\+::string}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a string parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}

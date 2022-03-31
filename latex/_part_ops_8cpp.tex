@@ -1,0 +1,81 @@
+\hypertarget{_part_ops_8cpp}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+App\+Part\+Ops/\+Part\+Ops.cpp File Reference}
+\label{_part_ops_8cpp}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppPartOps/PartOps.cpp@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AppPartOps/PartOps.cpp}}
+{\ttfamily \#include \char`\"{}Part\+Ops.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Part\+Ops\+Internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Del\+Me\+Bad\+Pattern.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Journaling\textbackslash{}\+Journaling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Journaling\textbackslash{}\+Journal\+Helpers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+Guid\+Object.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+App\+Library\textbackslash{}\+Feature.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+String\+Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+Core\+Session.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+Observer.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ \mbox{\hyperlink{_part_ops_8cpp_ac44b43b317e46305f3f83ca53689ceda}{Journaling\+\_\+\+Open\+Part}} (std\+::string part\+File\+Path)
+\item 
+\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ \mbox{\hyperlink{_part_ops_8cpp_aba2a5c110f15c5f18453d118b8ea8f18}{Journaling\+\_\+\+Make\+Part}} (std\+::string part\+File\+Path)
+\item 
+void \mbox{\hyperlink{_part_ops_8cpp_a7ee2ab274a0a3491516a1009e34ca5fd}{Journaling\+\_\+\+Part\+\_\+\+Save}} (\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$part\+File)
+\item 
+void \mbox{\hyperlink{_part_ops_8cpp_ac31c1ea4d3b4b08d51e8879cd538ec99}{Journaling\+\_\+\+Part\+\_\+\+Make\+Widget\+Feature}} (\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$part\+File, bool option1, int values)
+\item 
+void \mbox{\hyperlink{_part_ops_8cpp_a13b21d4d82cf7c4cd7c9a3e14f8c2e56}{Read\+In\+Part\+File}} (int \&guid, std\+::string part\+File\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_part_ops_8cpp_a1df0b198511660dbfd41ee09bcb45570}{Part\+File\+Name\+Token}} = \char`\"{}Part\+File\+Name\+:\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{_part_ops_8cpp_a5a1a20392a6a5cf38bb1ca49c1824bf8}{Schema\+Version\+Token}} = \char`\"{}Schema\+Version\+:\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_part_ops_8cpp_aba2a5c110f15c5f18453d118b8ea8f18}\label{_part_ops_8cpp_aba2a5c110f15c5f18453d118b8ea8f18}} 
+\index{PartOps.cpp@{PartOps.cpp}!Journaling\_MakePart@{Journaling\_MakePart}}
+\index{Journaling\_MakePart@{Journaling\_MakePart}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{Journaling\_MakePart()}{Journaling\_MakePart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ Journaling\+\_\+\+Make\+Part (\begin{DoxyParamCaption}\item[{std\+::string}]{part\+File\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8cpp_ac44b43b317e46305f3f83ca53689ceda}\label{_part_ops_8cpp_ac44b43b317e46305f3f83ca53689ceda}} 
+\index{PartOps.cpp@{PartOps.cpp}!Journaling\_OpenPart@{Journaling\_OpenPart}}
+\index{Journaling\_OpenPart@{Journaling\_OpenPart}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{Journaling\_OpenPart()}{Journaling\_OpenPart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$ Journaling\+\_\+\+Open\+Part (\begin{DoxyParamCaption}\item[{std\+::string}]{part\+File\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8cpp_ac31c1ea4d3b4b08d51e8879cd538ec99}\label{_part_ops_8cpp_ac31c1ea4d3b4b08d51e8879cd538ec99}} 
+\index{PartOps.cpp@{PartOps.cpp}!Journaling\_Part\_MakeWidgetFeature@{Journaling\_Part\_MakeWidgetFeature}}
+\index{Journaling\_Part\_MakeWidgetFeature@{Journaling\_Part\_MakeWidgetFeature}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{Journaling\_Part\_MakeWidgetFeature()}{Journaling\_Part\_MakeWidgetFeature()}}
+{\footnotesize\ttfamily void Journaling\+\_\+\+Part\+\_\+\+Make\+Widget\+Feature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$}]{part\+File,  }\item[{bool}]{option1,  }\item[{int}]{values }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8cpp_a7ee2ab274a0a3491516a1009e34ca5fd}\label{_part_ops_8cpp_a7ee2ab274a0a3491516a1009e34ca5fd}} 
+\index{PartOps.cpp@{PartOps.cpp}!Journaling\_Part\_Save@{Journaling\_Part\_Save}}
+\index{Journaling\_Part\_Save@{Journaling\_Part\_Save}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{Journaling\_Part\_Save()}{Journaling\_Part\_Save()}}
+{\footnotesize\ttfamily void Journaling\+\_\+\+Part\+\_\+\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_part_file}{Part\+File}} $\ast$}]{part\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_part_ops_8cpp_a13b21d4d82cf7c4cd7c9a3e14f8c2e56}\label{_part_ops_8cpp_a13b21d4d82cf7c4cd7c9a3e14f8c2e56}} 
+\index{PartOps.cpp@{PartOps.cpp}!ReadInPartFile@{ReadInPartFile}}
+\index{ReadInPartFile@{ReadInPartFile}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadInPartFile()}{ReadInPartFile()}}
+{\footnotesize\ttfamily void Read\+In\+Part\+File (\begin{DoxyParamCaption}\item[{int \&}]{guid,  }\item[{std\+::string}]{part\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_part_ops_8cpp_a1df0b198511660dbfd41ee09bcb45570}\label{_part_ops_8cpp_a1df0b198511660dbfd41ee09bcb45570}} 
+\index{PartOps.cpp@{PartOps.cpp}!PartFileNameToken@{PartFileNameToken}}
+\index{PartFileNameToken@{PartFileNameToken}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{PartFileNameToken}{PartFileNameToken}}
+{\footnotesize\ttfamily std\+::string Part\+File\+Name\+Token = \char`\"{}Part\+File\+Name\+:\char`\"{}}
+
+\mbox{\Hypertarget{_part_ops_8cpp_a5a1a20392a6a5cf38bb1ca49c1824bf8}\label{_part_ops_8cpp_a5a1a20392a6a5cf38bb1ca49c1824bf8}} 
+\index{PartOps.cpp@{PartOps.cpp}!SchemaVersionToken@{SchemaVersionToken}}
+\index{SchemaVersionToken@{SchemaVersionToken}!PartOps.cpp@{PartOps.cpp}}
+\doxysubsubsection{\texorpdfstring{SchemaVersionToken}{SchemaVersionToken}}
+{\footnotesize\ttfamily std\+::string Schema\+Version\+Token = \char`\"{}Schema\+Version\+:\char`\"{}}
+

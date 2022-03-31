@@ -1,0 +1,43 @@
+\hypertarget{_part_builder_8h_source}{}\doxysection{Part\+Builder.\+h}
+\label{_part_builder_8h_source}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AutomationBinding/PartBuilder.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/AutomationBinding/PartBuilder.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}AutomationBindingExports.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}IBuilder.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{namespace }AutomationAPI}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7     \textcolor{keyword}{class }CADObject;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{19     \textcolor{keyword}{class }AUTOMATIONBINDING\_API \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder}{PartBuilder}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_automation_a_p_i_1_1_i_builder}{IBuilder}}}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \textcolor{keyword}{enum} \mbox{\hyperlink{class_automation_a_p_i_1_1_part_builder_aa335acab95befd5e56244b88fe6b7915}{PartBuilderTypes}}}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{24             TypesRadius, }
+\DoxyCodeLine{25             TypesCircumference }
+\DoxyCodeLine{26         \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordtype}{void} SetType(PartBuilderTypes type);}
+\DoxyCodeLine{29         PartBuilderTypes GetType();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} SetRadius(\textcolor{keywordtype}{int} h);}
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} GetRadius();}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} SetCircumference(\textcolor{keywordtype}{int} w);}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} GetCircumference();}
+\DoxyCodeLine{35         \textcolor{keywordtype}{int} GetSurfaceArea();}
+\DoxyCodeLine{36         \textcolor{keywordtype}{int} GetVolume();}
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} SetOrigin(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} z);}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} GetOrigin(\textcolor{keywordtype}{int}\& x, \textcolor{keywordtype}{int}\& y, \textcolor{keywordtype}{int}\& z);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \mbox{\hyperlink{class_automation_a_p_i_1_1_c_a_d_object}{CADObject}}* Commit() \textcolor{keyword}{override};}
+\DoxyCodeLine{42     \textcolor{keyword}{private}:}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \};}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}

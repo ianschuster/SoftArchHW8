@@ -1,0 +1,264 @@
+\hypertarget{_journaling_8cpp}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Journaling/\+Journaling.cpp File Reference}
+\label{_journaling_8cpp}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/Journaling.cpp@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/Journaling.cpp}}
+{\ttfamily \#include \char`\"{}framework.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journaling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journaling\+Internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journal\+Helpers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journal\+Call\+Param\+Data\+Class.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journal\+Call\+Param\+Data\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}Journal\+Call\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Journal\+File.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_journal_1_1_journal_file}{Journal\+File}} $\ast$ \mbox{\hyperlink{_journaling_8cpp_aeb4b1eb9bf33267a9adfaddfddcaa9d5}{Get\+Active\+Journal\+File}} ()
+\item 
+bool \mbox{\hyperlink{_journaling_8cpp_ad76106857bb1c87c7e6cf3045182d265}{In\+Guid\+To\+Param\+Map}} (int guid)
+\item 
+void \mbox{\hyperlink{_journaling_8cpp_a2b0a942da7b65b3ac7405fa487aa0e7f}{Add\+Guid\+To\+Param\+Map}} (int guid, std\+::string \&param)
+\item 
+std\+::string \mbox{\hyperlink{_journaling_8cpp_a0a6c7126b8a7e0485b3687cf07ecc01f}{Get\+Guid\+To\+Param}} (int guid, bool \&found)
+\item 
+void \mbox{\hyperlink{_journaling_8cpp_a2c6d5b5d645b240fa35327df36971cb0}{Set\+Journaling\+Langauge}} (\mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} jnl\+Lang)
+\begin{DoxyCompactList}\small\item\em Function to set the journaling langauge. This value cannot be changed once we start journaling, and exception will be thrown if this happens \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} \mbox{\hyperlink{_journaling_8cpp_a84e04c578eb31b6a387b199d02f529ab}{Get\+Journaling\+Langauge}} ()
+\begin{DoxyCompactList}\small\item\em Returns the journal language. If we are recording this is the active language we are journaling in \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_acff3001c70679164e6323faff9d28dc4}{Start\+Journaling}} (std\+::string jnl\+File)
+\begin{DoxyCompactList}\small\item\em Starts journal file, language is based upon value returned by Get\+Journaling\+Langauge \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_ab7eb056abea2284b4a88922730dfbf55}{End\+Journaling}} ()
+\begin{DoxyCompactList}\small\item\em This ends journal file and write outs the file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_journaling_8cpp_a398baaa7bdbfde77b0c79689670232e8}{Is\+Journaling}} ()
+\begin{DoxyCompactList}\small\item\em Are we journaling a journal file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_a8169a51e50380355cab285cf9cb5b8ee}{Journal\+Int\+In\+Param}} (int value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a integer parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_adee1ad55ea709e8fd8865390956d1d90}{Journal\+Bool\+In\+Param}} (bool value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a bool parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_a9dcc7a5d62856968d4e94df351351b97}{Journal\+String\+In\+Param}} (std\+::string value, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a string parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_a00da9d284d22fb7931c48e0c09023d6b}{Journal\+Return\+Class}} (\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$class\+Object, std\+::string class\+Name, std\+::string param\+Name)
+\begin{DoxyCompactList}\small\item\em Journals in a class as a return parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_ac23fb52238bc0cde9e664bf20e729412}{Journal\+Start\+Call}} (std\+::string method\+Name, \mbox{\hyperlink{_journaling_types_8h_a9d427615dc05ca96030f6c38d8a5420b}{Canned\+Globals}} canned\+Global)
+\begin{DoxyCompactList}\small\item\em Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a canned global \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_afbb5da31c5a87a00b8fee19be80cf2f4}{Journal\+Start\+Call}} (std\+::string method\+Name, \mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$class\+Object)
+\begin{DoxyCompactList}\small\item\em Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a class \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_journaling_8cpp_afba207327cea8723e44fc7da7766f4d6}{Journal\+End\+Call}} ()
+\begin{DoxyCompactList}\small\item\em Ends the journal for the method call \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{_journaling_8cpp_a99b9575d846befb2cb6163a52d9c2b70}{Generate\+Variable\+Name}} (std\+::string variable\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_journaling_8cpp_a2b0a942da7b65b3ac7405fa487aa0e7f}\label{_journaling_8cpp_a2b0a942da7b65b3ac7405fa487aa0e7f}} 
+\index{Journaling.cpp@{Journaling.cpp}!AddGuidToParamMap@{AddGuidToParamMap}}
+\index{AddGuidToParamMap@{AddGuidToParamMap}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{AddGuidToParamMap()}{AddGuidToParamMap()}}
+{\footnotesize\ttfamily void Add\+Guid\+To\+Param\+Map (\begin{DoxyParamCaption}\item[{int}]{guid,  }\item[{std\+::string \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_8cpp_ab7eb056abea2284b4a88922730dfbf55}\label{_journaling_8cpp_ab7eb056abea2284b4a88922730dfbf55}} 
+\index{Journaling.cpp@{Journaling.cpp}!EndJournaling@{EndJournaling}}
+\index{EndJournaling@{EndJournaling}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{EndJournaling()}{EndJournaling()}}
+{\footnotesize\ttfamily void End\+Journaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This ends journal file and write outs the file. 
+
+\mbox{\Hypertarget{_journaling_8cpp_a99b9575d846befb2cb6163a52d9c2b70}\label{_journaling_8cpp_a99b9575d846befb2cb6163a52d9c2b70}} 
+\index{Journaling.cpp@{Journaling.cpp}!GenerateVariableName@{GenerateVariableName}}
+\index{GenerateVariableName@{GenerateVariableName}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{GenerateVariableName()}{GenerateVariableName()}}
+{\footnotesize\ttfamily std\+::string Generate\+Variable\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{variable\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_8cpp_aeb4b1eb9bf33267a9adfaddfddcaa9d5}\label{_journaling_8cpp_aeb4b1eb9bf33267a9adfaddfddcaa9d5}} 
+\index{Journaling.cpp@{Journaling.cpp}!GetActiveJournalFile@{GetActiveJournalFile}}
+\index{GetActiveJournalFile@{GetActiveJournalFile}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{GetActiveJournalFile()}{GetActiveJournalFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_journal_1_1_journal_file}{Journal\+File}} $\ast$ Get\+Active\+Journal\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_8cpp_a0a6c7126b8a7e0485b3687cf07ecc01f}\label{_journaling_8cpp_a0a6c7126b8a7e0485b3687cf07ecc01f}} 
+\index{Journaling.cpp@{Journaling.cpp}!GetGuidToParam@{GetGuidToParam}}
+\index{GetGuidToParam@{GetGuidToParam}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{GetGuidToParam()}{GetGuidToParam()}}
+{\footnotesize\ttfamily std\+::string Get\+Guid\+To\+Param (\begin{DoxyParamCaption}\item[{int}]{guid,  }\item[{bool \&}]{found }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_8cpp_a84e04c578eb31b6a387b199d02f529ab}\label{_journaling_8cpp_a84e04c578eb31b6a387b199d02f529ab}} 
+\index{Journaling.cpp@{Journaling.cpp}!GetJournalingLangauge@{GetJournalingLangauge}}
+\index{GetJournalingLangauge@{GetJournalingLangauge}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{GetJournalingLangauge()}{GetJournalingLangauge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} Get\+Journaling\+Langauge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the journal language. If we are recording this is the active language we are journaling in 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{_journaling_8cpp_ad76106857bb1c87c7e6cf3045182d265}\label{_journaling_8cpp_ad76106857bb1c87c7e6cf3045182d265}} 
+\index{Journaling.cpp@{Journaling.cpp}!InGuidToParamMap@{InGuidToParamMap}}
+\index{InGuidToParamMap@{InGuidToParamMap}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{InGuidToParamMap()}{InGuidToParamMap()}}
+{\footnotesize\ttfamily bool In\+Guid\+To\+Param\+Map (\begin{DoxyParamCaption}\item[{int}]{guid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_journaling_8cpp_a398baaa7bdbfde77b0c79689670232e8}\label{_journaling_8cpp_a398baaa7bdbfde77b0c79689670232e8}} 
+\index{Journaling.cpp@{Journaling.cpp}!IsJournaling@{IsJournaling}}
+\index{IsJournaling@{IsJournaling}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{IsJournaling()}{IsJournaling()}}
+{\footnotesize\ttfamily bool Is\+Journaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Are we journaling a journal file. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{_journaling_8cpp_adee1ad55ea709e8fd8865390956d1d90}\label{_journaling_8cpp_adee1ad55ea709e8fd8865390956d1d90}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalBoolInParam@{JournalBoolInParam}}
+\index{JournalBoolInParam@{JournalBoolInParam}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalBoolInParam()}{JournalBoolInParam()}}
+{\footnotesize\ttfamily void Journal\+Bool\+In\+Param (\begin{DoxyParamCaption}\item[{bool}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a bool parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_afba207327cea8723e44fc7da7766f4d6}\label{_journaling_8cpp_afba207327cea8723e44fc7da7766f4d6}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalEndCall@{JournalEndCall}}
+\index{JournalEndCall@{JournalEndCall}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalEndCall()}{JournalEndCall()}}
+{\footnotesize\ttfamily void Journal\+End\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the journal for the method call 
+
+\mbox{\Hypertarget{_journaling_8cpp_a8169a51e50380355cab285cf9cb5b8ee}\label{_journaling_8cpp_a8169a51e50380355cab285cf9cb5b8ee}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalIntInParam@{JournalIntInParam}}
+\index{JournalIntInParam@{JournalIntInParam}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalIntInParam()}{JournalIntInParam()}}
+{\footnotesize\ttfamily void Journal\+Int\+In\+Param (\begin{DoxyParamCaption}\item[{int}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a integer parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_a00da9d284d22fb7931c48e0c09023d6b}\label{_journaling_8cpp_a00da9d284d22fb7931c48e0c09023d6b}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalReturnClass@{JournalReturnClass}}
+\index{JournalReturnClass@{JournalReturnClass}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalReturnClass()}{JournalReturnClass()}}
+{\footnotesize\ttfamily void Journal\+Return\+Class (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$}]{class\+Object,  }\item[{std\+::string}]{class\+Name,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a class as a return parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+Object} & \\
+\hline
+{\em class\+Name} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_ac23fb52238bc0cde9e664bf20e729412}\label{_journaling_8cpp_ac23fb52238bc0cde9e664bf20e729412}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalStartCall@{JournalStartCall}}
+\index{JournalStartCall@{JournalStartCall}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalStartCall()}{JournalStartCall()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Journal\+Start\+Call (\begin{DoxyParamCaption}\item[{std\+::string}]{method\+Name,  }\item[{\mbox{\hyperlink{_journaling_types_8h_a9d427615dc05ca96030f6c38d8a5420b}{Canned\+Globals}}}]{canned\+Global }\end{DoxyParamCaption})}
+
+
+
+Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a canned global 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+{\em canned\+Global} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_afbb5da31c5a87a00b8fee19be80cf2f4}\label{_journaling_8cpp_afbb5da31c5a87a00b8fee19be80cf2f4}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalStartCall@{JournalStartCall}}
+\index{JournalStartCall@{JournalStartCall}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalStartCall()}{JournalStartCall()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Journal\+Start\+Call (\begin{DoxyParamCaption}\item[{std\+::string}]{method\+Name,  }\item[{\mbox{\hyperlink{class_guid_object}{Guid\+Object}} $\ast$}]{class\+Object }\end{DoxyParamCaption})}
+
+
+
+Starts a \mbox{\hyperlink{namespace_journal}{Journal}} call for a method call on a class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & \\
+\hline
+{\em class\+Object} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_a9dcc7a5d62856968d4e94df351351b97}\label{_journaling_8cpp_a9dcc7a5d62856968d4e94df351351b97}} 
+\index{Journaling.cpp@{Journaling.cpp}!JournalStringInParam@{JournalStringInParam}}
+\index{JournalStringInParam@{JournalStringInParam}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{JournalStringInParam()}{JournalStringInParam()}}
+{\footnotesize\ttfamily void Journal\+String\+In\+Param (\begin{DoxyParamCaption}\item[{std\+::string}]{value,  }\item[{std\+::string}]{param\+Name }\end{DoxyParamCaption})}
+
+
+
+Journals in a string parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+{\em param\+Name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_a2c6d5b5d645b240fa35327df36971cb0}\label{_journaling_8cpp_a2c6d5b5d645b240fa35327df36971cb0}} 
+\index{Journaling.cpp@{Journaling.cpp}!SetJournalingLangauge@{SetJournalingLangauge}}
+\index{SetJournalingLangauge@{SetJournalingLangauge}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{SetJournalingLangauge()}{SetJournalingLangauge()}}
+{\footnotesize\ttfamily void Set\+Journaling\+Langauge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}}}]{jnl\+Lang }\end{DoxyParamCaption})}
+
+
+
+Function to set the journaling langauge. This value cannot be changed once we start journaling, and exception will be thrown if this happens 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jnl\+Lang} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8cpp_acff3001c70679164e6323faff9d28dc4}\label{_journaling_8cpp_acff3001c70679164e6323faff9d28dc4}} 
+\index{Journaling.cpp@{Journaling.cpp}!StartJournaling@{StartJournaling}}
+\index{StartJournaling@{StartJournaling}!Journaling.cpp@{Journaling.cpp}}
+\doxysubsubsection{\texorpdfstring{StartJournaling()}{StartJournaling()}}
+{\footnotesize\ttfamily void Start\+Journaling (\begin{DoxyParamCaption}\item[{std\+::string}]{jnl\+File }\end{DoxyParamCaption})}
+
+
+
+Starts journal file, language is based upon value returned by Get\+Journaling\+Langauge 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jnl\+File} & \\
+\hline
+\end{DoxyParams}
