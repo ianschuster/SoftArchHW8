@@ -1,0 +1,88 @@
+\hypertarget{_journaling_8h}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Journaling/\+Journaling.h File Reference}
+\label{_journaling_8h}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/Journaling.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Journaling/Journaling.h}}
+{\ttfamily \#include \char`\"{}Journal\+Exports.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Journaling\+Types.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journaling_8h_a9c907b36938361c706be2132629d8ff6}{Set\+Journaling\+Langauge}} (\mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} jnl\+Lang)
+\begin{DoxyCompactList}\small\item\em Function to set the journaling langauge. This value cannot be changed once we start journaling, and exception will be thrown if this happens \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} \mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} \mbox{\hyperlink{_journaling_8h_abca28053af774aed786be72e6e162f4c}{Get\+Journaling\+Langauge}} ()
+\begin{DoxyCompactList}\small\item\em Returns the journal language. If we are recording this is the active language we are journaling in \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journaling_8h_a013720ad23133ecd826b725cfaf07ffc}{Start\+Journaling}} (std\+::string jnl\+File)
+\begin{DoxyCompactList}\small\item\em Starts journal file, language is based upon value returned by Get\+Journaling\+Langauge \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void \mbox{\hyperlink{_journaling_8h_a61ba3121063643dacb28af6dd0451659}{End\+Journaling}} ()
+\begin{DoxyCompactList}\small\item\em This ends journal file and write outs the file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} bool \mbox{\hyperlink{_journaling_8h_a52408fbd46e03bf073bc7a9abc10c4d5}{Is\+Journaling}} ()
+\begin{DoxyCompactList}\small\item\em Are we journaling a journal file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_journaling_8h_a61ba3121063643dacb28af6dd0451659}\label{_journaling_8h_a61ba3121063643dacb28af6dd0451659}} 
+\index{Journaling.h@{Journaling.h}!EndJournaling@{EndJournaling}}
+\index{EndJournaling@{EndJournaling}!Journaling.h@{Journaling.h}}
+\doxysubsubsection{\texorpdfstring{EndJournaling()}{EndJournaling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void End\+Journaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This ends journal file and write outs the file. 
+
+\mbox{\Hypertarget{_journaling_8h_abca28053af774aed786be72e6e162f4c}\label{_journaling_8h_abca28053af774aed786be72e6e162f4c}} 
+\index{Journaling.h@{Journaling.h}!GetJournalingLangauge@{GetJournalingLangauge}}
+\index{GetJournalingLangauge@{GetJournalingLangauge}!Journaling.h@{Journaling.h}}
+\doxysubsubsection{\texorpdfstring{GetJournalingLangauge()}{GetJournalingLangauge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} \mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}} Get\+Journaling\+Langauge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the journal language. If we are recording this is the active language we are journaling in 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{_journaling_8h_a52408fbd46e03bf073bc7a9abc10c4d5}\label{_journaling_8h_a52408fbd46e03bf073bc7a9abc10c4d5}} 
+\index{Journaling.h@{Journaling.h}!IsJournaling@{IsJournaling}}
+\index{IsJournaling@{IsJournaling}!Journaling.h@{Journaling.h}}
+\doxysubsubsection{\texorpdfstring{IsJournaling()}{IsJournaling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} bool Is\+Journaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Are we journaling a journal file. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{_journaling_8h_a9c907b36938361c706be2132629d8ff6}\label{_journaling_8h_a9c907b36938361c706be2132629d8ff6}} 
+\index{Journaling.h@{Journaling.h}!SetJournalingLangauge@{SetJournalingLangauge}}
+\index{SetJournalingLangauge@{SetJournalingLangauge}!Journaling.h@{Journaling.h}}
+\doxysubsubsection{\texorpdfstring{SetJournalingLangauge()}{SetJournalingLangauge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Set\+Journaling\+Langauge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_journaling_types_8h_ab638130300b6031c22254988b32daa44}{Journaling\+Language}}}]{jnl\+Lang }\end{DoxyParamCaption})}
+
+
+
+Function to set the journaling langauge. This value cannot be changed once we start journaling, and exception will be thrown if this happens 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jnl\+Lang} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_journaling_8h_a013720ad23133ecd826b725cfaf07ffc}\label{_journaling_8h_a013720ad23133ecd826b725cfaf07ffc}} 
+\index{Journaling.h@{Journaling.h}!StartJournaling@{StartJournaling}}
+\index{StartJournaling@{StartJournaling}!Journaling.h@{Journaling.h}}
+\doxysubsubsection{\texorpdfstring{StartJournaling()}{StartJournaling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_journal_exports_8h_a31979a596ea7976b911f0ae650bc1d03}{JOURNALING\+\_\+\+API}} void Start\+Journaling (\begin{DoxyParamCaption}\item[{std\+::string}]{jnl\+File }\end{DoxyParamCaption})}
+
+
+
+Starts journal file, language is based upon value returned by Get\+Journaling\+Langauge 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jnl\+File} & \\
+\hline
+\end{DoxyParams}

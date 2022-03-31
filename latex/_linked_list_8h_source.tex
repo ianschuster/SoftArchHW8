@@ -1,0 +1,83 @@
+\hypertarget{_linked_list_8h_source}{}\doxysection{Linked\+List.\+h}
+\label{_linked_list_8h_source}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Core/LinkedList.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/Core/LinkedList.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}CoreExports.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{comment}{// This class is exported from the LinkedList.dll}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }CORE\_API \mbox{\hyperlink{class_i_linked_list}{ILinkedList}} \{}
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \mbox{\hyperlink{class_i_linked_list}{ILinkedList}}();}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_i_linked_list_a8247ac82ac5fcef19f03726629bb1f8e}{isEmpty}}() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_i_linked_list_a3e3716659ed7a10596142448c30a5478}{add}}(\textcolor{keywordtype}{int} val) = 0;}
+\DoxyCodeLine{21     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_i_linked_list_af499a78a8585a492a722c2b1c8de5ed8}{remove}}(\textcolor{keywordtype}{int} val) = 0;}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_linked_list_ad23b827d3a1a43aed1034bed9a67dfb7}{clear}}() = 0;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{virtual} std::string toString() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} m\_count;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }CORE\_API \mbox{\hyperlink{class_node}{Node}}}
+\DoxyCodeLine{33 \{}
+\DoxyCodeLine{34 \textcolor{keyword}{private}:}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} m\_value;}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_node}{Node}}* m\_next;}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} pat;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_node}{Node}}();}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_node}{Node}}(\textcolor{keywordtype}{int} val);}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_node}{Node}}(\textcolor{keywordtype}{int} val, \mbox{\hyperlink{class_node}{Node}}* nextNode);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} setItem(\textcolor{keyword}{const} \textcolor{keywordtype}{int}\& val);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} setNext(\mbox{\hyperlink{class_node}{Node}}* nextNodePtr);}
+\DoxyCodeLine{45     \textcolor{keywordtype}{int} getItem() \textcolor{keyword}{const};}
+\DoxyCodeLine{46     \mbox{\hyperlink{class_node}{Node}}* getNext() \textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_node}{\string~Node}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{keyword}{class }CORE\_API \mbox{\hyperlink{class_array_based_linked_list}{ArrayBasedLinkedList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_linked_list}{ILinkedList}}}
+\DoxyCodeLine{53 \{}
+\DoxyCodeLine{54 \textcolor{keyword}{public}:}
+\DoxyCodeLine{55     \mbox{\hyperlink{class_array_based_linked_list}{ArrayBasedLinkedList}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{bool} isEmpty() \textcolor{keyword}{const override};}
+\DoxyCodeLine{59     \textcolor{keywordtype}{bool} add(\textcolor{keywordtype}{int} val) \textcolor{keyword}{override};}
+\DoxyCodeLine{62     \textcolor{keywordtype}{bool} remove(\textcolor{keywordtype}{int} val) \textcolor{keyword}{override};}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} clear() \textcolor{keyword}{override};}
+\DoxyCodeLine{65     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_array_based_linked_list}{\string~ArrayBasedLinkedList}}();}
+\DoxyCodeLine{66     std::string toString() \textcolor{keyword}{const override};}
+\DoxyCodeLine{67 \textcolor{keyword}{private}:}
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} m\_values[10];}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{class }CORE\_API \mbox{\hyperlink{class_pointer_based_linked_list}{PointerBasedLinkedList}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_linked_list}{ILinkedList}}}
+\DoxyCodeLine{72 \{}
+\DoxyCodeLine{73 \textcolor{keyword}{public}:}
+\DoxyCodeLine{74     \mbox{\hyperlink{class_pointer_based_linked_list}{PointerBasedLinkedList}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} isEmpty() \textcolor{keyword}{const  override};}
+\DoxyCodeLine{78     \textcolor{keywordtype}{bool} add(\textcolor{keywordtype}{int} val) \textcolor{keyword}{override};}
+\DoxyCodeLine{81     \textcolor{keywordtype}{bool} remove(\textcolor{keywordtype}{int} val)  \textcolor{keyword}{override};}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} clear()  \textcolor{keyword}{override};}
+\DoxyCodeLine{84     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_pointer_based_linked_list}{\string~PointerBasedLinkedList}}();}
+\DoxyCodeLine{85     std::string toString() \textcolor{keyword}{const override};}
+\DoxyCodeLine{86 \textcolor{keyword}{private}:}
+\DoxyCodeLine{87     \mbox{\hyperlink{class_node}{Node}}* m\_head;}
+\DoxyCodeLine{88 \};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 }
+
+\end{DoxyCode}

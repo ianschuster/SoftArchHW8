@@ -1,0 +1,42 @@
+\hypertarget{_cool_demand_loaded_library_2_wire_8h_source}{}\doxysection{Wire.\+h}
+\label{_cool_demand_loaded_library_2_wire_8h_source}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/CoolDemandLoadedLibrary/Wire.h@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/CoolDemandLoadedLibrary/Wire.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}CoolDemandLoadedLibraryExports.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}RoutingFeature.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keywordtype}{void} ReadInWire(std::ifstream\& streamObject);}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }COOLDEMANDLOADEDLIBRARY\_API \mbox{\hyperlink{class_i_wire}{IWire}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \textcolor{keyword}{virtual} std::string GetVersion() = 0;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }COOLDEMANDLOADEDLIBRARY\_API \mbox{\hyperlink{class_wire}{Wire}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_routing_feature}{RoutingFeature}}, \textcolor{keyword}{public} \mbox{\hyperlink{class_i_wire}{IWire}}}
+\DoxyCodeLine{18 \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_wire}{Wire}}(std::string distance);}
+\DoxyCodeLine{21     std::string GetVersion() \textcolor{keyword}{override};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{const} std::string\& GetDistance()}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         \textcolor{keywordflow}{return} m\_distance;}
+\DoxyCodeLine{26     \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30     std::string m\_distance;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

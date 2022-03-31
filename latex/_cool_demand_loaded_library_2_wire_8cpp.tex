@@ -1,0 +1,68 @@
+\hypertarget{_cool_demand_loaded_library_2_wire_8cpp}{}\doxysection{C\+:/\+Users/\+Robert Schuster/\+Source/\+Repos/\+Software\+Architecture\+CLass\+Application1/\+Cool\+Demand\+Loaded\+Library/\+Wire.cpp File Reference}
+\label{_cool_demand_loaded_library_2_wire_8cpp}\index{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/CoolDemandLoadedLibrary/Wire.cpp@{C:/Users/Robert Schuster/Source/Repos/SoftwareArchitectureCLassApplication1/CoolDemandLoadedLibrary/Wire.cpp}}
+{\ttfamily \#include \char`\"{}Wire.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Wire\+Versions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Core\textbackslash{}\+String\+Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Data\+Reader\textbackslash{}\+Data\+Object\+Reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Data\+Reader\textbackslash{}\textbackslash{}\+Data\+Reader\+Registrant.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_a525057f4d22cfd6e7545e77c64596ed5}{Read\+Wire\+Version2}} (std\+::ifstream \&stream\+Object)
+\item 
+void $\ast$ \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_ab40f1c6403d3145cacc667e4f5d07eb4}{Read\+Wire\+Version3}} (std\+::ifstream \&stream\+Object)
+\item 
+\mbox{\hyperlink{class_wire}{Wire}} $\ast$ \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_ad7dfcbf26de4e2dc45929eb19241a775}{Version\+Up\+Wire\+Version2}} (\mbox{\hyperlink{class_wire2}{Wire2}} $\ast$old\+Feature)
+\item 
+void \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_a9a9f0258e93a254697fc42f47b68262c}{Read\+In\+Wire}} (std\+::ifstream \&stream\+Object)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_a594b9fad0c50811c8e4a3c9f0f2ad6a7}{Wire\+\_\+\+Version\+Token}} = \char`\"{}Wire\+\_\+\+Version\+:\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{_cool_demand_loaded_library_2_wire_8cpp_abda2968c82b47f7167b9038062ac799d}{Wire\+\_\+\+Distance\+Token}} = \char`\"{}Wire\+\_\+\+Distance\+:\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_a9a9f0258e93a254697fc42f47b68262c}\label{_cool_demand_loaded_library_2_wire_8cpp_a9a9f0258e93a254697fc42f47b68262c}} 
+\index{Wire.cpp@{Wire.cpp}!ReadInWire@{ReadInWire}}
+\index{ReadInWire@{ReadInWire}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadInWire()}{ReadInWire()}}
+{\footnotesize\ttfamily void Read\+In\+Wire (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{stream\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_a525057f4d22cfd6e7545e77c64596ed5}\label{_cool_demand_loaded_library_2_wire_8cpp_a525057f4d22cfd6e7545e77c64596ed5}} 
+\index{Wire.cpp@{Wire.cpp}!ReadWireVersion2@{ReadWireVersion2}}
+\index{ReadWireVersion2@{ReadWireVersion2}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadWireVersion2()}{ReadWireVersion2()}}
+{\footnotesize\ttfamily void $\ast$ Read\+Wire\+Version2 (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{stream\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_ab40f1c6403d3145cacc667e4f5d07eb4}\label{_cool_demand_loaded_library_2_wire_8cpp_ab40f1c6403d3145cacc667e4f5d07eb4}} 
+\index{Wire.cpp@{Wire.cpp}!ReadWireVersion3@{ReadWireVersion3}}
+\index{ReadWireVersion3@{ReadWireVersion3}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{ReadWireVersion3()}{ReadWireVersion3()}}
+{\footnotesize\ttfamily void $\ast$ Read\+Wire\+Version3 (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{stream\+Object }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_ad7dfcbf26de4e2dc45929eb19241a775}\label{_cool_demand_loaded_library_2_wire_8cpp_ad7dfcbf26de4e2dc45929eb19241a775}} 
+\index{Wire.cpp@{Wire.cpp}!VersionUpWireVersion2@{VersionUpWireVersion2}}
+\index{VersionUpWireVersion2@{VersionUpWireVersion2}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{VersionUpWireVersion2()}{VersionUpWireVersion2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_wire}{Wire}} $\ast$ Version\+Up\+Wire\+Version2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_wire2}{Wire2}} $\ast$}]{old\+Feature }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_abda2968c82b47f7167b9038062ac799d}\label{_cool_demand_loaded_library_2_wire_8cpp_abda2968c82b47f7167b9038062ac799d}} 
+\index{Wire.cpp@{Wire.cpp}!Wire\_DistanceToken@{Wire\_DistanceToken}}
+\index{Wire\_DistanceToken@{Wire\_DistanceToken}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{Wire\_DistanceToken}{Wire\_DistanceToken}}
+{\footnotesize\ttfamily std\+::string Wire\+\_\+\+Distance\+Token = \char`\"{}Wire\+\_\+\+Distance\+:\char`\"{}}
+
+\mbox{\Hypertarget{_cool_demand_loaded_library_2_wire_8cpp_a594b9fad0c50811c8e4a3c9f0f2ad6a7}\label{_cool_demand_loaded_library_2_wire_8cpp_a594b9fad0c50811c8e4a3c9f0f2ad6a7}} 
+\index{Wire.cpp@{Wire.cpp}!Wire\_VersionToken@{Wire\_VersionToken}}
+\index{Wire\_VersionToken@{Wire\_VersionToken}!Wire.cpp@{Wire.cpp}}
+\doxysubsubsection{\texorpdfstring{Wire\_VersionToken}{Wire\_VersionToken}}
+{\footnotesize\ttfamily std\+::string Wire\+\_\+\+Version\+Token = \char`\"{}Wire\+\_\+\+Version\+:\char`\"{}}
+
